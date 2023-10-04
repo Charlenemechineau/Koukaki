@@ -1,0 +1,141 @@
+/*
+ Theme Name:  Fleurs d'orangers et chats errants - Oscars Short
+ Theme URI: https://www.koukaki.local
+ Author: Studio Koukaki
+ Author URI: https://www.koukaki.local
+ Template: foce
+ Description: Thème enfant à l'ocasion de la nomination aux Oscars Shorts
+ Version: 0.1
+ */
+
+ /* effet d'apparition des sections en fade-in */
+
+.banner {
+    animation: fade-in 2s linear normal, slide-in-top 2s linear normal;
+    opacity: 1;
+}
+
+.story {
+    animation: fade-in 2s linear normal, slide-in-bottom 2s linear normal;
+    opacity: 1;
+}
+
+#studio {
+    animation: fade-in 2s linear normal, slide-in-left 2s linear normal;
+    opacity: 1;
+}
+
+.section-oscars {
+    animation: fade-in 2s linear normal, slide-in-right 2s linear normal;
+    opacity: 1;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-top {
+    from {
+        transform: translateY(-40px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slide-in-bottom {
+    from {
+        transform: translateY(40px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slide-in-left {
+    from {
+        transform: translateX(-40px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-in-right {
+    from {
+        transform: translateX(40px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+/*effet d’apparition des titres*/
+
+.animation-titre {
+    opacity: 0;
+    transform: translate(0, 50%);
+    transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out;
+}
+
+.animes {
+    opacity: 1;
+    transform: none;
+}
+
+/* rotation des fleurs */
+.story__article::after, h2::after, #studio h2::before, .site-footer::after, .site-footer::before, .site-footer ul::after {
+    animation: rotate-flower 10s linear infinite;
+    }
+    
+    @keyframes rotate-flower {
+        from {
+            transform: rotate(0);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+  
+/*  Section nomination  */
+.section-oscars-texte {
+    background-image: url(images/Rectangle.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 178px;
+    width: 500px;
+ }
+
+.section-oscars-texte p {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.section-oscars {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    padding: 80px;
+}
+
+/* Ajout du H1 sur la vidéo */
+.banner {
+    position: relative;
+    overflow: hidden;
+}
+
+.banner img {
+    position: absolute;
+    animation: floated 2s ease infinite;
+}
