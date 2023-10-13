@@ -19,7 +19,6 @@ get_header();
             </article>
 
            <?php get_template_part ("section-carrousel")?>
-           
             <article id="place">
                 <div>
                 <h3 class="animation-titre">Le Lieu</h3>

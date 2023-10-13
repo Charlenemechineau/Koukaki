@@ -26,15 +26,19 @@
 
 	<header id="masthead" class="site-header">
 		<nav id="site-navigation" class="main-navigation">
+            <!--Mise en place du menu burger-->
+            <div class="titre-site">
+                <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+            </div>
             <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <div class="burger">
                 <span class="line"></span>
-                <span class="line"></span>
-                <span class="line"></span>
+                </div>
             </button>
-            <ul>
+
+            <ul class="menu">
                 <li><a href="#story">Histoire</a></li>
                 <li><a href="#characters">Personnages</a></li>
-                <li class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></li>
                 <li><a href="#place">Lieu</a></li>
                 <li><a href="#studio">Studio Koukaki</a></li>
 
