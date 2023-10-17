@@ -148,7 +148,7 @@
 }
 /* Pour desactiver la vidéo sur la version mobile */
 @media screen and (max-width: 767px) {
-  #background-video {
+  #fond-video {
     display: none;
   }
 }
@@ -317,7 +317,7 @@
 }
 
 .menu .logo {
-  height: 72px;
+  height: 172px;
   -moz-column-gap: 20px;
        column-gap: 20px;
 }
@@ -355,4 +355,231 @@
 .menu .animes {
   opacity: 1;
   transform: none;
+}
+
+/* ajout des fleurs au menu - rotations */
+.fleur-blanche {
+  position: absolute;
+  right: 225px;
+  top: 80px;
+  height: 185px;
+}
+
+.hibiscus {
+  position: absolute;
+  right: -132px;
+  bottom: -66px;
+  width: 279px;
+}
+
+.fleur-violette {
+  position: absolute;
+  right: 27px;
+  top: 275px;
+  width: 60px;
+}
+
+.orchid {
+  position: absolute;
+  left: 10px;
+  top: 70px;
+}
+
+.fleur-orange {
+  position: absolute;
+  left: 302px;
+}
+
+.fleur-blanche, .hibiscus, .fleur-violette, .orchid, .fleur-orange {
+  animation: rotate-flower 10s linear infinite;
+}
+
+@keyframes rotate-flower {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/*ajout des chats plus effet de flottement */
+.chat-noir {
+  position: absolute;
+  right: 305px;
+  bottom: 265px;
+  height: 100px;
+}
+
+.chat-bleu {
+  position: absolute;
+  right: 1211px;
+  bottom: 515px;
+  height: 100px;
+}
+
+.chat-orange {
+  position: absolute;
+  right: 1314px;
+  bottom: 104px;
+  height: 80px;
+}
+
+.chat-noir {
+  animation: floated 2s ease infinite;
+}
+
+@keyframes floated {
+  0% {
+    transform: translate(3%, 3%);
+  }
+  50% {
+    transform: translate(-2%, 3%);
+  }
+  75% {
+    transform: translate(3%, -2%);
+  }
+  100% {
+    transform: translate(3%, 3%);
+  }
+}
+.chat-bleu, .chat-orange {
+  animation: floatedBlue 2s ease infinite;
+}
+
+@keyframes floatedBlue {
+  0% {
+    transform: translate(-3%, -4%);
+  }
+  50% {
+    transform: translate(-3%, 4%);
+  }
+  75% {
+    transform: translate(2%, -2%);
+  }
+  100% {
+    transform: translate(-3%, -4%);
+  }
+}
+.chat-orange {
+  animation: floatedOrange 2s ease infinite;
+}
+
+@keyframes floatedOrange {
+  0% {
+    transform: translate(1%, 5%);
+  }
+  50% {
+    transform: translate(-5%, 2%);
+  }
+  75% {
+    transform: translate(4%, -4%);
+  }
+  100% {
+    transform: translate(1%, 5%);
+  }
+}
+/* media queris smartphone */
+@media screen and (max-width: 767px) {
+  .menu-toggle {
+    top: 15px !important;
+  }
+  .main-navigation {
+    height: 80px;
+  }
+  h2, h3 {
+    font-size: 30px;
+  }
+  .titre-site {
+    font-size: 14px !important;
+  }
+  .banner img {
+    width: 80%;
+  }
+  .big-cloud {
+    right: 294px;
+    top: 61px;
+  }
+  .small-cloud {
+    right: -394px;
+    top: 540px;
+  }
+  .section-oscars-texte p {
+    font-size: 9px;
+    padding: 0;
+  }
+  .section-oscars-texte {
+    height: 62px;
+    width: 688px;
+  }
+  .section-oscars {
+    padding: 42px;
+  }
+  .orchid {
+    position: absolute;
+    left: 297px;
+    top: 70px;
+    width: 94px;
+  }
+  .fleur-blanche {
+    position: absolute;
+    right: 263px !important;
+    top: 22px !important;
+    height: 97px !important;
+  }
+  .fleur-violette {
+    position: absolute;
+    right: 307px !important;
+    top: 230px !important;
+    width: 60px !important;
+  }
+  .fleur-orange {
+    position: absolute;
+    left: 14px !important;
+    width: 49px !important;
+  }
+}
+/* media queris tablette */
+@media screen and (max-width: 992px) {
+  .small-cloud {
+    right: 220px;
+    top: 519px;
+  }
+  .fleur-violette {
+    position: absolute;
+    right: 212px;
+    top: 275px;
+    width: 60px;
+  }
+  .fleur-blanche {
+    position: absolute;
+    right: 39px;
+    top: 80px;
+    height: 185px;
+  }
+  .fleur-orange {
+    position: absolute;
+    left: 151px;
+  }
+  .chat-noir {
+    position: absolute;
+    right: 631px;
+    bottom: 265px;
+    height: 100px;
+  }
+  .big-cloud {
+    position: absolute;
+    top: 80px;
+    right: 4px;
+    filter: blur(15px);
+  }
+  .small-cloud {
+    right: 23px;
+    top: 519px;
+  }
+}
+@media screen and (max-width: 1245px) {
+  .small-cloud {
+    right: 220px;
+    top: 519px;
+  }
 }/*# sourceMappingURL=style.css.map */

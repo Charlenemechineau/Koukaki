@@ -17,8 +17,9 @@ get_header();
             <article id="" class="story__article">
                 <p><?php echo get_theme_mod('story'); ?></p>
             </article>
-
+        <!-- Mise en place caroussel-->
            <?php get_template_part ("section-carrousel")?>
+           
             <article id="place">
                 <div>
                 <h3 class="animation-titre">Le Lieu</h3>

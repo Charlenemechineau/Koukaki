@@ -16,8 +16,8 @@ titles.forEach(title => {
 
 
 // effet de parallaxe sur la vidéo et le titre du header//
-const video = document.querySelector('#fond-video');
-const title = document.querySelector('.animation-titre');
+const video = document.querySelector('#fond-video'); //Selectionne l'élément avec la classe "fond-video" et l'attribut à la variable video //
+const title = document.querySelector('.animation-titre'); // Selectionne l'élément avec la classe
 
 window.addEventListener('scroll', function() {
     const scrollPosition = window.pageYOffset;
@@ -27,19 +27,19 @@ window.addEventListener('scroll', function() {
 
 
 // Carrousel  //
-const swiper = new Swiper('.swiper', {
-    effect: 'coverflow',
-    grabCursor: true, 
-    centeredSlides: true, 
-    slidesPerView: 'auto', 
+const swiper = new Swiper('.swiper', { // élément qui servira de conteneur pour le carsousel //
+    effect: 'coverflow',    // effet de transition utilisé pour le carrousel //
+    grabCursor: true,   
+    centeredSlides: true,  // centre la diapositive active dans la vue du corrousel//
+    slidesPerView: 'auto', //permet au carrousel d'ajuster dynamiquement le nombre de diapositives visibles en fonction de l'espace disponible //
     coverflowEffect: {
-        rotate: 50, 
-        stretch: 5, 
-        depth: 100, 
-        modifier: 1, 
-        slideShadows: false, 
+        rotate: 50,  // angle de rotation des diapositives//
+        stretch: 5,  // Effet d'étirement appliqué aux diapositive//
+        depth: 100,  // La profondeur de la disposition en 3 dimensions //
+        modifier: 1, // Coefficient qui affecte la sensibilité de l'effet //
+        slideShadows: false, // permet de désactiver les ombres sur les diapositives//
     },
-    initialSlide: 1,
+    initialSlide: 1, // Permet une spécificité de la diapositive afficher en tant que diapositives initial //
   });
 
 

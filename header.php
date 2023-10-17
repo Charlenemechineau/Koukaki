@@ -37,11 +37,25 @@
             </button>
 
             <ul class="menu">
+            <img class="logo" src="<?php echo get_stylesheet_directory_uri() . '/images/petit-logo.png'; ?> "alt="logo pour menu">
                 <li><a href="#story">Histoire</a></li>
                 <li><a href="#characters">Personnages</a></li>
                 <li><a href="#place">Lieu</a></li>
                 <li><a href="#studio">Studio Koukaki</a></li>
 
+            <img class= "fleur-blanche" src="<?php echo get_stylesheet_directory_uri() . '/images/white.png'; ?> "alt="fleur">
+            <img class= "hibiscus" src="<?php echo get_stylesheet_directory_uri() . '/images/Hibiscus.png'; ?> "alt="fleur">
+            <img class= "fleur-orange" src="<?php echo get_stylesheet_directory_uri() . '/images/orange.png'; ?> " alt="fleur">
+            <img class= "orchid" src="<?php echo get_stylesheet_directory_uri() . '/images/orchid.png'; ?> "alt="fleur">
+            <img class= "fleur-violette" src="<?php echo get_stylesheet_directory_uri() . '/images/purple.png'; ?> "alt="fleur">
+
+            <img class= "chat-noir" src="<?php echo get_stylesheet_directory_uri() . '/images/blackCat.png'; ?> "alt="chat">
+            <img class= "chat-bleu" src="<?php echo get_stylesheet_directory_uri() . '/images/blueCat.png'; ?> "alt="chat">
+            <img class= "chat-orange" src="<?php echo get_stylesheet_directory_uri() . '/images/orangeCat.png'; ?> "alt="chat">
+
+            <div class="footer-nav">
+                 <a href="#"> STUDIO KOUKAKI </a>
+            </div>   
             </ul>
 
 		</nav><!-- #site-navigation -->
